@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Implant Finder</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tamanho">
+      <section class="sec" id="sec">
+        <div class="cards-container hide">
+          <div class="cards"></div>
+          <button>Reiniciar</button>
+        </div>
+        <div class="form-container">
+          <img class="image" src="./assets/TESTE.png" alt="" />
+
+          <form id="form-input" class="form" action="">
+            <div>
+              <label name="altura">Altura:</label>
+
+              <input
+                class="input-digitado"
+                name="altura"
+                id="altura-input"
+                type="text"
+                autofocus
+                required
+              />
+            </div>
+
+            <div>
+              <label name="largura">Largura:</label>
+
+              <input
+                class="input-digitado"
+                name="largura"
+                id="largura-input"
+                type="text"
+                required
+              />
+            </div>
+
+            <div>
+              <label name="tipo">Tipo Ósseo:</label>
+
+              <select name="tipo" id="tipo-osseo">
+                <option value="I" name="tipo">I</option>
+                <option value="II" name="tipo">II</option>
+                <option value="III" name="tipo">III</option>
+                <option value="IV" name="tipo">IV</option>
+              </select>
+            </div>
+            <input
+              type="button"
+              value="Legenda"
+              id="botaoLegenda"
+              class="botaoLegenda"
+            />
+            <div id="legenda" class="legenda">
+              <h5>"Tipo I</h5>
+              <h5>Osso cortical denso (Anterior de Mandibula)"</h5>
+              <br />
+              <h5>Tipo II</h5>
+              <h5>Osso cortical poroso e trabecular grosso</h5>
+              <h5>(Anterior e Posterior de Mandibula, Anterior de Maxila)"</h5>
+              <br />
+              <h5>Tipo III</h5>
+              <h5>Osso cortical poroso estreito e trabecular fino</h5>
+              <h5>(Anterior e Posterior de Maxila, Posterior de Mandíbula)"</h5>
+              <br />
+              <h5>Tipo IV</h5>
+              <h5>Osso trabecular fino (Posterior de Maxila)"</h5>
+              <br />
+            </div>
+            <div>
+              <label name="plataforma">Plataforma:</label>
+
+              <select name="plataforma" id="plataforma">
+                <option value="CM" name="tipo">CM</option>
+                <option value="HI" name="tipo">HI</option>
+                <option value="HE" name="tipo">HE</option>
+              </select>
+            </div>
+            <label name="maxaltura">Máx Altura</label>
+            <div>
+              <input
+                type="range"
+                min="0"
+                max="18"
+                value="0"
+                step="0.1"
+                id="alturaSlider"
+                class="slider"
+              />
+              <span id="demo"></span>
+            </div>
+
+            <label name="maxlargura">Máx Largura</label>
+            <div>
+              <input
+                type="range"
+                min="0"
+                max="5"
+                value="0"
+                step="0.1"
+                id="larguraSlider"
+                class="slider"
+              />
+              <span id="demo2"></span>
+            </div>
+
+            <div class="botao-container">
+              <button class="botao" id="botao">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <div class="respostas hide">
+        <ul id="implanteList"></ul>
+        <button id="backButton" class="backButton">Voltar</button>
+      </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
