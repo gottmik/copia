@@ -26,6 +26,15 @@ Javascript, HTML, CSS
 
 ![Mobile Version](https://user-images.githubusercontent.com/91344634/200922694-d72fd5a1-ae96-420c-a7e7-6cf1bf159121.png)
 
+> ### Tablet Version:
+
+![Tablet Version](https://user-images.githubusercontent.com/91344634/200924269-2fa97a55-7b0d-4b79-b6aa-949b7505182e.png)
+
+> ### Desktop Version:
+
+![Desktop Version](https://user-images.githubusercontent.com/91344634/200924883-30f657d8-dbdf-4cad-883e-c7d1ddd2fe54.png)
+
+
 
 
 
